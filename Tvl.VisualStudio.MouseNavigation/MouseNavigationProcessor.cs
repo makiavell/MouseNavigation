@@ -49,6 +49,10 @@ namespace Tvl.VisualStudio.MouseNavigation
                 cmdId = (uint)VSConstants.VSStd97CmdID.ShellNavForward;
                 break;
 
+            case MouseButton.Middle:
+                cmdId = (uint)VSConstants.VSStd97CmdID.GotoDefn;
+                break;
+          
             default:
                 return;
             }
